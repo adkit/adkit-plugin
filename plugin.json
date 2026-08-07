@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ads",
+  "version": "1.0.5",
+  "description": "Create, analyze, and manage ad campaigns from AI agents with AdKit.",
+  "author": {
+    "name": "AdKit",
+    "email": "contact@adkit.so",
+    "url": "https://adkit.so"
+  },
+  "homepage": "https://adkit.so",
+  "repository": "https://github.com/adkit/ads-mcp",
+  "license": "MIT"
+}

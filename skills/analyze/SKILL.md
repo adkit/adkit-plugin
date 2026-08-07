@@ -1,4 +1,5 @@
 ---
+name: analyze
 description: >
   Pull ad campaign performance data from connected platforms. Use when the user
   asks about campaign results, ROAS, ad spend, CTR, conversions, search terms,

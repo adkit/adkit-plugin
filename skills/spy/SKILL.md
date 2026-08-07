@@ -1,4 +1,5 @@
 ---
+name: spy
 description: >
   Research competitor ads using the ad library. Use when the user wants to spy
   on competitor ads, see what ads a brand is running, browse competitor creatives,

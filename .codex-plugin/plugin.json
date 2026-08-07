@@ -1,0 +1,36 @@
+{
+  "name": "ads",
+  "version": "1.0.5",
+  "description": "Create, analyze, and manage ad campaigns from AI agents with AdKit.",
+  "author": {
+    "name": "AdKit",
+    "email": "contact@adkit.so",
+    "url": "https://adkit.so"
+  },
+  "homepage": "https://adkit.so",
+  "repository": "https://github.com/adkit/ads-mcp",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Ads MCP",
+    "shortDescription": "Manage ad campaigns from your AI agent.",
+    "longDescription": "Connect AdKit to create campaign drafts, analyze performance, research competitor ads, and generate ad creatives.",
+    "developerName": "AdKit",
+    "category": "Business",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://adkit.so",
+    "privacyPolicyURL": "https://adkit.so/legal/privacy",
+    "termsOfServiceURL": "https://adkit.so/legal/terms",
+    "defaultPrompt": [
+      "Analyze my ad performance and highlight what needs attention.",
+      "Research the ads a competitor is running.",
+      "Create a campaign draft for review."
+    ],
+    "brandColor": "#F97316"
+  }
+}

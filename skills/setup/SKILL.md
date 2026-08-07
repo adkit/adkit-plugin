@@ -1,4 +1,5 @@
 ---
+name: setup
 description: >
   Connect ad platforms to AdKit. Use when the user wants to set up AdKit,
   link their Meta, Google, or TikTok ad accounts, or verify their connection.

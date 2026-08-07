@@ -1,4 +1,5 @@
 ---
+name: studio
 description: >
   Generate AI ad creatives — images, copy, and briefs. Use when the user wants
   to generate ad images, create ad creatives with AI, make an ad, build a

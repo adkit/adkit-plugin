@@ -1,4 +1,5 @@
 ---
+name: launch
 description: >
   Launch ad campaigns on connected platforms. Use when the user wants to create
   a new campaign, set up targeting, configure ads, upload media, duplicate
