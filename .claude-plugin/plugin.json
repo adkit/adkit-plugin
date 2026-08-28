@@ -1,6 +1,6 @@
 {
     "name": "ads",
-    "description": "Create and manage ad campaigns on Meta, Google, TikTok, and more. Spy on competitor ads across ad libraries. Generate ad creatives with AI. Use when you need to launch a campaign, find out why ROAS dropped, see what ads a competitor is running, create ad images, or pull a performance report. Manages campaigns, ad sets, ads, and keywords. Uploads media. Pulls performance metrics with date, placement, and demographic breakdowns. The ad library lets you browse any advertiser's active ads, creative formats, and landing pages. AI studio generates images and copy from a brief. Draft-first: every create starts as a draft, nothing publishes without explicit approval. Supports Facebook, Instagram, Google Search, TikTok, and Reddit. Multi-account for agencies.",
+    "description": "Create and manage ad campaigns on Meta, Google, TikTok, and more. Spy on competitor ads across ad libraries. Use when you need to launch a campaign, find out why ROAS dropped, see what ads a competitor is running, or pull a performance report. Manages campaigns, ad sets, ads, and keywords. Uploads media. Pulls performance metrics with date, placement, and demographic breakdowns. The ad library lets you browse any advertiser's active ads, creative formats, and landing pages. Draft-first: every create starts as a draft, nothing publishes without explicit approval. Supports Facebook, Instagram, Google Search, TikTok, and Reddit. Multi-account for agencies.",
     "author": {
         "name": "AdKit",
         "email": "contact@adkit.so"
@@ -29,14 +29,11 @@
         "launch ads",
         "campaign management",
         "ad library",
-        "ai ads",
-        "ad creative",
         "facebook ads",
         "instagram ads",
         "advertising",
         "paid media",
         "ppc",
-        "ad generation",
         "performance marketing",
         "ad audit",
         "roas",
@@ -44,5 +41,6 @@
         "competitor ads",
         "competitor spy",
         "ad spy"
-    ]
+    ],
+    "mcpServers": "./.mcp-core.json"
 }

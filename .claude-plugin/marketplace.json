@@ -1,7 +1,7 @@
 {
   "name": "adkit",
   "metadata": {
-    "description": "AdKit — Ads MCP for Claude. Create, analyze, and spy on ad campaigns across Google Ads, Meta Ads, and TikTok Ads from any AI agent."
+    "description": "AdKit \u2014 Ads MCP for Claude. Create, analyze, and spy on ad campaigns across Google Ads, Meta Ads, and TikTok Ads from any AI agent."
   },
   "owner": {
     "name": "AdKit",
@@ -11,12 +11,19 @@
     {
       "name": "ads",
       "source": "./",
-      "description": "Ads MCP for Claude — create campaigns, analyze performance, and spy on competitor ads across Google Ads, Meta Ads, and TikTok Ads. Draft-first, multi-account.",
+      "description": "Ads MCP for Claude \u2014 create campaigns, analyze performance, and spy on competitor ads across Google Ads, Meta Ads, and TikTok Ads. Draft-first, multi-account.",
       "author": {
         "name": "AdKit",
         "email": "contact@adkit.so"
       },
-      "homepage": "https://adkit.so"
+      "homepage": "https://adkit.so",
+      "mcpServers": "./.mcp-core.json",
+      "skills": [
+        "./skills/analyze/",
+        "./skills/launch/",
+        "./skills/setup/",
+        "./skills/spy/"
+      ]
     }
   ]
 }
