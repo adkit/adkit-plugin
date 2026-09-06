@@ -1,0 +1,30 @@
+{
+  "name": "ads",
+  "displayName": "Ads MCP",
+  "version": "1.0.5",
+  "description": "Create, launch, and analyze ad campaigns on Google Ads, Meta, TikTok, LinkedIn, Microsoft, Reddit, and X. Spy on competitor ads. Draft-first: nothing publishes without your approval.",
+  "author": {
+    "name": "AdKit",
+    "email": "contact@adkit.so",
+    "url": "https://adkit.so"
+  },
+  "homepage": "https://adkit.so",
+  "repository": "https://github.com/adkit/ads-mcp",
+  "license": "MIT",
+  "icon": "./assets/logo.png",
+  "keywords": [
+    "ads",
+    "google ads",
+    "meta ads",
+    "facebook ads",
+    "tiktok ads",
+    "linkedin ads",
+    "ad library",
+    "competitor ads",
+    "campaign management",
+    "paid media",
+    "mcp"
+  ],
+  "mcpServers": "./mcp.json",
+  "skills": "./skills/"
+}
