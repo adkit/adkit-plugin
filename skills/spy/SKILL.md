@@ -15,11 +15,13 @@ The ad library (`adkit_library`) lets you search advertisers and browse their ad
 
 Requires AdKit to be connected — run `/ads:setup` first if needed.
 
+Use a `projectId` from `adkit_projects`. Pass it at the top level of library calls to choose whose watchlist to read or change.
+
 ## 1. Find the advertiser
 
 Search by name:
 ```
-adkit_library entity: "advertisers" action: "search" params: { search: "Notion" }
+adkit_library entity: "advertisers" action: "search" projectId: "<projectId>" params: { query: "Notion" }
 ```
 
 Or browse by industry:
@@ -31,11 +33,35 @@ adkit_library entity: "advertisers" action: "list" params: { industry: "SaaS", s
 
 | Action | Key params |
 |--------|-----------|
-| `list` | `industry`, `category`, `platform`, `sort` (name/newest/spend) |
-| `search` | `search` (required), plus any list filters |
-| `get` | `id` — full advertiser details and stats |
+| `list` | `scope` (library/watchlist), `industry`, `category`, `platform`, `sort` (name/newest/spend; default: newest), `limit`, `page` |
+| `search` | `query` (required), plus any list filters |
+| `get` | Top-level `id` — full advertiser details and stats |
 | `similar` | `advertiserId` — find similar advertisers |
-| `add` | `website` or `name` — track a new advertiser |
+| `add` | `website` or a platform library URL required; `name` optional — find or create an advertiser and save it to the project watchlist |
+| `track` | Top-level `id` — save an existing advertiser to the project watchlist |
+| `untrack` | Top-level `id` — remove it from this project only |
+
+### My Watchlist
+
+Omitted `scope` (or `library`) includes all advertisers. Use `watchlist` to match the selected project's My Watchlist in the dashboard. Filters, pagination, and totals apply inside that scope.
+
+```
+adkit_library entity: "advertisers" action: "list" projectId: "<projectId>" params: { scope: "watchlist" }
+adkit_library entity: "advertisers" action: "track" projectId: "<projectId>" id: "<advertiserId>"
+adkit_library entity: "advertisers" action: "untrack" projectId: "<projectId>" id: "<advertiserId>"
+```
+
+Track/untrack return `advertiserId` and `tracked: true/false`. Repeating either is safe. Tracking requires an existing advertiser; untracking also removes stale membership for deleted advertisers. Untracking keeps the shared advertiser and other projects' watchlists. With only a name, search first and track the returned ID.
+
+CLI equivalents:
+```bash
+adkit library advertisers list --scope watchlist --project <projectId>
+adkit library advertisers search Notion --scope watchlist --project <projectId>
+adkit library advertisers add --website notion.so --project <projectId>
+adkit library advertisers track <advertiserId> --project <projectId>
+adkit library advertisers untrack <advertiserId> --project <projectId>
+```
+Add `--json` for automation.
 
 ## 2. Browse their ads
 
