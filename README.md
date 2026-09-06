@@ -38,7 +38,7 @@
 | `adkit_setup` | Get links to connect your ad platforms |
 | `adkit_help` | Look up what each platform supports, with exact params |
 | `adkit_manage` | Create, edit, and publish campaigns, ad sets, and ads. Pull spend, ROAS, and performance |
-| `adkit_library` | Search 500k+ ads from 1,000+ advertisers on Meta, Google, and LinkedIn |
+| `adkit_library` | Search 1M+ ads on Meta, Google, and LinkedIn |
 | `adkit_studio` | Generate ad images and copy from a brief |
 | `adkit_upload_file` | Upload images and videos for your ads |
 | `adkit_feedback` | Report bugs or missing features to the AdKit team |
