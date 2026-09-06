@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ads",
   "version": "1.0.5",
-  "description": "Create, analyze, and manage ad campaigns from AI agents with AdKit.",
+  "description": "Run Google Ads, Meta (Facebook, Instagram), TikTok, and LinkedIn ads from Cursor: launch campaigns, analyze performance, spy on 1M+ competitor ads, generate creatives.",
   "author": {
     "name": "AdKit",
     "email": "contact@adkit.so",
@@ -10,5 +10,20 @@
   },
   "homepage": "https://adkit.so",
   "repository": "https://github.com/adkit/ads-mcp",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "google ads",
+    "meta ads",
+    "facebook ads",
+    "instagram ads",
+    "tiktok ads",
+    "linkedin ads",
+    "advertising",
+    "ppc",
+    "ad library",
+    "competitor ads",
+    "campaign management",
+    "paid media",
+    "mcp"
+  ]
 }
